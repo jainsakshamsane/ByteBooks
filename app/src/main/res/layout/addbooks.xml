@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0019"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="280dp"
+        android:layout_height="220dp"
+        android:layout_toRightOf="@id/imageView2"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/addbooks"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/logoutbookbtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logoutnaya" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/layout1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter Book Name"
+                android:id="@+id/bookname"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/baseline_book_24"
+                android:background="@drawable/rectangle_shape"
+                android:padding="10dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter Author Name"
+                android:id="@+id/authorname"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:background="@drawable/rectangle_shape"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:inputType="text" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter Price"
+                android:id="@+id/bookprice"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/baseline_currency_rupee_24"
+                android:background="@drawable/rectangle_shape"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number" />
+
+
+            <Button
+                android:id="@+id/bookpdfbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:text="UPLOAD BOOK PDF"
+                android:backgroundTint="#00008b"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/submitbookbtn"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:text="SUBMIT"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:backgroundTint="#FFCC00"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"/>
+
+            <Button
+                android:id="@+id/requestviewbtnadmin"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:text="View requests"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:backgroundTint="#FFCC00"
+                android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>

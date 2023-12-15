@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0019"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/loginuser"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Email"
+        android:id="@+id/emailuseruserlogin"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:background="@drawable/rectangle_shape"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:id="@+id/passworduseruserlogin"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:background="@drawable/rectangle_shape"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBoxuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Save Password"
+        android:textColor="#FFCC00"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/loginuseruserbtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:backgroundTint="#FFCC00"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/registeruseruserbtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:backgroundTint="#FFCC00"
+        android:layout_gravity="center" />
+
+</LinearLayout>

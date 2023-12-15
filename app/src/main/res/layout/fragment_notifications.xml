@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0B0019"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="280dp"
+                android:layout_height="220dp"
+                android:layout_toRightOf="@id/imageView2"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/settings"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/changepasswordbtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/changepassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/layout1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="Comment a Feedback!"
+                android:id="@+id/issuetext"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:background="@drawable/rectangle_shape"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/issuebtn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Submit"
+                android:textStyle="bold"
+                android:layout_marginLeft="110dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:backgroundTint="#FFCC00"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request A Book"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:padding="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Book Name"
+                android:id="@+id/booknamerequest"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:background="@drawable/rectangle_shape"
+                android:padding="10dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Author Name"
+                android:id="@+id/authornamerequest"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:background="@drawable/rectangle_shape"
+                android:padding="10dp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/requestadminbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Request Admin"
+                android:textStyle="bold"
+                android:layout_marginLeft="80dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:backgroundTint="#FFCC00"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

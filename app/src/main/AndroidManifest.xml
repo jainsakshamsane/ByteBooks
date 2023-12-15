@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/bytebooklogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bytebooklogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bytebooks"
+        tools:targetApi="31">
+        <activity
+            android:name=".WelcomeScreen"
+            android:exported="true"
+            android:label="bytebooks">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Selector"></activity>
+        <activity android:name=".AdminRegister"></activity>
+        <activity android:name=".Adminlogin"></activity>
+        <activity android:name=".AddBooks"></activity>
+        <activity android:name=".ViewRequests"></activity>
+        <activity android:name=".UserRegister"></activity>
+        <activity android:name=".Userlogin"></activity>
+        <activity android:name=".PasswordChange"></activity>
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>
